@@ -1,0 +1,148 @@
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 0 20px;
+  margin: 0 10px;
+}
+
+h1 a,a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+
+
+/* ナビゲーション */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+}
+
+nav ul li{
+  list-style: none;
+  flex-wrap: wrap; 
+}
+
+nav ul li a,a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu {
+  font-size: 36px; 
+  font-weight: bold;
+}
+
+.menu + .menu {
+  margin-left: 24px;
+}
+
+
+
+#camera {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 50px auto;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+#about {
+  
+  text-align: center;
+  margin: 50px auto;
+}
+
+.about-content {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+.about-content img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.profile {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 25px
+}
+
+#works-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.works {
+  margin: 0 10px;
+  width: 30%;
+  
+}
+
+.works img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#about,#works {
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+
+/* ===============
+レシポンシブデザイン
+================== */
+
+@media screen and (max-width: 780px) {
+
+  .title{
+    font-size: 26px;
+  }
+
+  .menu{
+    font-size: 22px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #works-list {
+    flex-direction: column;
+  }
+  .works {
+    width: 100%;
+  }
+
+}
